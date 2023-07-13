@@ -1,0 +1,30 @@
+    
+    
+    <%- include('./partials/header') %>
+    
+    <div class="index mt-2">
+        <%- include('./partials/flash') %>
+        <div class="index-title">
+            <div class="left-side">
+                <img src="./images/cover.png" alt="">
+            </div>
+            <div class="right-side m-auto">
+                <h1>SPOKEN.</h1>
+                <h2>Connect to the world.</h2>
+                <h2>Spread your thoughts.</h2>
+                <h2>Stay updated.</h2>
+                <div class="btns mt-4">
+                    <% if(currentUser){%>
+                        <a href="/blogs" class="btn">Read a blog</a>
+                        <a href="/blogs/create" class="btn">Write a blog</a>
+                    <%}else{%>
+                        <a href="/blogs" class="btn">Read a blog</a>
+                        <a href="/blogs/login" class="btn">Write a blog</a>
+                    <%}%>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./partials/rights') %>
+    <%- include('./partials/footer') %>

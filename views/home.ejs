@@ -1,0 +1,40 @@
+
+<%- include('./partials/header') %>
+<%- include('./partials/navbar') %>
+    
+<div class="max-wid_1 m-auto"><hr></div>
+
+<%- include('./partials/flash') %>
+
+<div class="content max-wid_1 m-auto m-2">
+    <div class="content-left">
+        <h1>Your search gets over here! The ultimate destination for bloggers.</h1>
+        <p>You can submit your articles here which will be reviewed by our team and then posted 
+            on our website. You can reach a large audience from here. <strong>GET STARTED!</strong></p>
+    </div>
+    <div class="content-right">
+        <img src="/images/blog.jpg" alt="" class="content_img">
+    </div>
+</div>
+<div class="max-wid_1 m-auto"><hr></div>
+<div class="articles max-wid_1 m-auto">
+    <h2>Featured Articles</h2>
+    <% blogs = blogs.reverse() %>
+    <% for(let item of blogs){ %>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="<%= item.img %>" alt="">
+            </div>
+            <div class="home-article-content">
+                <a href="/blogs/<%= item._id %>/read">
+                    <h3><%= item.title %></h3>
+                </a>
+                <div><%= item.author %></div>
+                <span><%= item.createdAt.toDateString() %></span>
+            </div>
+        </div>
+    <%}%>
+</div>
+
+<%- include('./partials/rights') %>
+<%- include('./partials/footer') %>

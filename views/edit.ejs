@@ -1,0 +1,27 @@
+
+<%- include('./partials/header') %>
+<%- include('./partials/navbar') %>
+
+<div class="max-wid_1 m-auto"><hr></div>
+<div class="col-md-6 mx-auto">
+    <h1 class="mb-4">Save your changes!</h1>
+    
+    <form action="/blogs/<%= blog._id %>?_method=patch" class="validated-form" method="post" novalidate>
+        <div class="mb-3">
+            <label for="title" class="form-label fw-semibold">Blog Title</label>
+            <input type="text" name="title" id="title" class="form-control" placeholder="Title" value="<%=blog.title%>" required>
+        </div>
+        <div class="mb-3">
+            <label for="img" class="form-label fw-semibold">Image URL</label>
+            <input type="text" name="img" id="img" class="form-control" placeholder="Image URL" value="<%=blog.img%>" required>
+        </div>
+        <div class="mb-3">
+            <label for="content" class="form-label fw-semibold">Your blog</label>
+            <textarea name="content" id="content" rows="15" class="form-control" placeholder="Content" required><%=blog.content%></textarea>
+        </div>
+        <button type="submit" class="btn mb-4">Submit</button>
+    </form>
+</div>
+
+<%- include('./partials/rights') %>
+<%- include('./partials/footer') %>

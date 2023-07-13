@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Playfair+Display&display=swap');
+:root{
+    --main-bg-color: rgb(16, 0, 85);
+    --font1: 'Lobster Two', cursive;
+    --font2: 'Playfair Display', serif;
+}
+
+.max-wid_1{
+    max-width: 80vw;
+}
+.max-wid_2{
+    max-width: 60vw;
+}
+.m-auto{
+    margin: auto;
+}
+.m-2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+hr{
+    border: 0.2px solid #1b1b1b;
+}
+.form-input{
+     font-size: 16px;
+     border: 2px solid rgb(107, 107, 107);
+     padding: 2px 7px;
+     border-radius: 4px;
+     margin: 0 13px;
+     font-family: var(--font2);
+     color: rgb(0, 0, 0);
+}
+.btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    background-color: #ffa425;
+    color: rgb(80, 80, 80);
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: rgb(245, 168, 69);
+}
+/* .form-control{
+    border: 1.5px solid rgb(61, 61, 61);
+    font-size: 18px;
+} */
+label{
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 11, 109);
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,35 @@
+@media screen and (max-width:807px){
+    .navigation{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .left{
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .content-right{
+        display: none;
+    }
+    .home-article{
+        flex-direction: column;
+    }
+    .home-article-content{
+        padding-top: 5px;
+    }
+    .home-article-img{
+        text-align: center;
+    }
+}
+@media screen and (max-width:305px){
+    .form-input{
+        font-size: 14px;
+        margin-right: 4px;
+        margin-left: 18px;
+    }
+    .btn{
+        font-size: 14px;
+    }
+}
+
+

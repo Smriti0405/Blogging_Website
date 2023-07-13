@@ -1,0 +1,29 @@
+h1{
+    font-family: var(--font2);
+    color: rgb(128, 0, 55);
+}
+
+/* ----------Index page------------ */
+
+.index{
+    background: linear-gradient(rgb(255, 255, 235),rgb(255, 255, 212),rgb(255, 255, 185));
+    width: 100%;
+}
+.index-title{
+    display: flex;
+}
+.left-side img{
+    width: 39rem;
+    height: 35.25rem;
+}
+.right-side h1{
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.right-side h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 2.25rem;
+}

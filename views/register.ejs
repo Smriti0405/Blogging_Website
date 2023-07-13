@@ -1,0 +1,35 @@
+
+
+<%- include('./partials/header') %>
+<%- include('./partials/navbar') %>
+
+<div class="max-wid_1 m-auto"><hr></div>
+<div class="col-md-6 mx-auto">
+    <h1 class="mb-4">Become a member SignUp!</h1>
+
+  <form action="/register" method="post" class="validated-form" novalidate>
+    <div class="mb-3">
+        <label for="email" class="form-label fw-semibold">E-Mail</label>
+        <input type="text" name="email" id="email" class="form-control" placeholder="E-mail" required>
+    </div>
+    <div class="mb-3">
+        <label for="twitter" class="form-label fw-semibold">Twitter</label>
+        <input type="text" name="twitter" id="twitter" class="form-control" placeholder="Twitter Account">
+    </div>
+    <div class="mb-3">
+        <label for="insta" class="form-label fw-semibold">Instagram</label>
+        <input type="text" name="insta" id="insta" class="form-control" placeholder="Instagram Account">
+    </div>
+    <div class="mb-3">
+        <label for="username" class="form-label fw-semibold">Username</label>
+        <input type="text" name="username" id="username" class="form-control" placeholder="Username" required>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label fw-semibold">Password</label>
+        <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+    </div>
+    <button type="submit" class="btn mb-3">SignUp</button>
+  </form>
+  </div>
+
+  <%- include('./partials/footer') %>
